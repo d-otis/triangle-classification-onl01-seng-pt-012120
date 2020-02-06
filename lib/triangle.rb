@@ -12,7 +12,7 @@ class Triangle
   
   def kind
     sides = [@s1, @s2, @s3]
-    if !(@s1 + @s2 > @s3) || sides.include?(0) || sides.all?(0) || sides.any? {|s| s < 0}
+    if sides.sum <= 0
       begin
         raise TriangleError
       rescue TriangleError => error
