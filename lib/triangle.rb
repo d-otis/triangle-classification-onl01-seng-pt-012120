@@ -19,7 +19,6 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    elsif sides.all?(0)
     elsif @s1 == @s2 && @s1 == @s3
       :equilateral
     elsif @s1 == @s2 || @s2 ==  @s3 || @s1 == @s3
