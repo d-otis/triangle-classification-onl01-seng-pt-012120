@@ -13,7 +13,7 @@ class Triangle
   def kind
     sides = [@s1, @s2, @s3]
     binding.pry
-    if sides.sum <= 0
+    if sides.sum <= 0 || sides.any? {|s| s < 0 }
       begin
         raise TriangleError
       rescue TriangleError => error
