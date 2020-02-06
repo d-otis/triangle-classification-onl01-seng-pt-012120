@@ -10,7 +10,7 @@ class Triangle
   
   def kind
     sides = [@side1, @side2, @side3]
-    if !(@side1 + @side2 > @side3) || sides.include?(sides)
+    if !(@side1 + @side2 > @side3) || sides.include?(0)
   end
   
   class TriangleError < StandardError
