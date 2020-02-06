@@ -11,6 +11,12 @@ class Triangle
   def kind
     sides = [@side1, @side2, @side3]
     if !(@side1 + @side2 > @side3) || sides.include?(0)
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
+    end
   end
   
   class TriangleError < StandardError
