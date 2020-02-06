@@ -1,16 +1,16 @@
 class Triangle
   
-  attr_accessor :side1, :side2, :side3
+  attr_accessor :s1, :s2, :s3
   
-  def initialize(side1, side2, side3)
-    @side1 = side1
-    @side2 = side2
-    @side3 = side3
+  def initialize(s1, s2, s3)
+    @s1 = s1
+    @s2 = s2
+    @s3 = s3
   end
   
   def kind
-    sides = [@side1, @side2, @side3]
-    if !(@side1 + @side2 > @side3) || sides.include?(0)
+    sides = [@s1, @s2, @s3]
+    if !(@s1 + @s2 > @s3) || sides.include?(0)
       begin
         raise TriangleError
       rescue TriangleError => error
