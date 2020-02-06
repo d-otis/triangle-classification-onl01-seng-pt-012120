@@ -15,7 +15,7 @@ class Triangle
     if sides.sum <= 0 || sides.any? {|s| s < 0 }
       begin
         raise TriangleError
-      rescue TriangleError => error
+      # rescue TriangleError => error
       end
     elsif @s1 == @s2 && @s1 == @s3
       :equilateral
