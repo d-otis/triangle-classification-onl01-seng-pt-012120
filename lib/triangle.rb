@@ -10,6 +10,7 @@ class Triangle
   
   def kind
     sides = [@s1, @s2, @s3]
+    binding.pry
     if !(@s1 + @s2 > @s3) || sides.include?(0)
       begin
         raise TriangleError
