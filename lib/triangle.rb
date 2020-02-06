@@ -16,7 +16,7 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-    elsif
+    elsif @s1 == @s2 && @s1 == @s3
       
     end
   end
